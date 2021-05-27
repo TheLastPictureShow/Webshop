@@ -1,0 +1,157 @@
+.app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: lightyellow;
+  position: fixed;
+  font-size: 1rem;
+  width: 75%;
+  height: 45%;
+  padding: 10px;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: dodgerblue;
+  font-family: Consolas;
+}
+
+.btn-continue-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 50px;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.btn-disabled {
+  border-radius: 20px;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-family: Consolas;
+  background-color: lavender;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+.btn-disabled:active {
+  border: none;
+  outline: none;
+  transform: translateY(4px);
+}
+
+.btn-disabled:focus {
+  border: none;
+  outline: none;
+}
+
+.btn-continue {
+  border-radius: 20px;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-family: Consolas;
+  background-color: lightcyan;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-continue:hover {
+  background-color: aquamarine;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-continue:active {
+  transform: translateY(4px);
+  outline: none;
+  border: none;
+}
+
+.form-group {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+
+.radio {
+  margin-left: 25px;
+  padding: 20px;
+  border: 1px solid transparent;
+  background-color: honeydew;
+  border-radius: 15px;
+}
+
+.radio:hover {
+  background-color: aquamarine;
+  border-radius: 15px;
+  transition: background-color 2s;
+}
+
+.radio > input {
+  margin-right: 7px;
+}
+
+.expense {
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense h1 {
+  background-color: rgba(240, 255, 240, 1);
+  color: royalblue;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.city {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  margin: 10px;
+}
+
+.col {
+  height: 25vh;
+  width: 50vw;
+}
+
+.green {
+  background: linear-gradient(to right, #4ac29a, #bdfff3);
+}
+
+.blue {
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+}
+
+.fire {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
