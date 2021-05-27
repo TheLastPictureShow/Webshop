@@ -1,14 +1,8 @@
 const spiceReducer = (state = "", action) => {
-  switch (action.type) {
-    case "SAFFRON":
-      return "Saffron";
-    case "PARSLEY":
-      return "Parsley";
-    case "THYME":
-      return "Thyme";
-    default:
-      return "";
-  }
+  return {
+    product: action.type,
+    price: action.data,
+  };
 };
 
 export default spiceReducer;
